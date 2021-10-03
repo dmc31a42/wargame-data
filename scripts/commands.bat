@@ -23,7 +23,7 @@ FOR %%I IN %versions% DO (
     export.py --fobs %rawsdir%  %%I %datadir%
     clean.py %rawsdir% %%I  %datadir%
     fobs.py %rawsdir% %%I %datadir%
-
+    tojson.py %rawsdir% %%I %datadir%
 )
 
 pause
